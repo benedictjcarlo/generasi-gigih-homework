@@ -1,38 +1,92 @@
-.App {
+body {
+  background-color: #212121;
+}
+
+
+.head {
+  margin: 0 auto;
+  width: 140px;
+  background: #6384B1;
+  background: -webkit-linear-gradient(top left, #6384B1, #5041A9);
+  background: -moz-linear-gradient(top left, #6384B1, #5041A9);
+  background: linear-gradient(to bottom right, #6384B1, #5041A9);
   text-align: center;
+  border-radius: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.head h1 {
+  padding: 10px 10px 20px 10px;
+  font-size: 28px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.albums {
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-album {
+  margin: 0 10px;
+  width: 240px;
+  color: white;
+  background-color: rgba(18, 18, 18, 1);
+  border-radius: 6px;
+}
+
+.card-album:hover {
+  background-color: rgba(18, 18, 18, .5);
+  transition: all .4s;
+}
+
+.image {
+  padding: 20px 20px 0 20px;
+  width: 200px;
+  object-fit: center;
+  border-radius: 20px;
+}
+
+.title {
+  padding: 0 20px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.t2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.artist {
+  padding: 0 20px;
+  text-align: left;
+  margin-top: -20px;
+  font-size: 16px;
+  color: #c4c4c4;
+}
+
+button {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: white;
+  color: #212121;
+}
+
+button:hover {
+  background: #6384B1;
+  background: -webkit-linear-gradient(top left, #6384B1, #5041A9);
+  background: -moz-linear-gradient(top left, #6384B1, #5041A9);
+  background: linear-gradient(to bottom right, #6384B1, #5041A9);
+  color: white;
+  transition: all .4s;
 }

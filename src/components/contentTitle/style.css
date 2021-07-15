@@ -1,0 +1,16 @@
+.head {
+    margin: 0 auto;
+    width: 140px;
+    background: #6384B1;
+    background: -webkit-linear-gradient(top left, #6384B1, #5041A9);
+    background: -moz-linear-gradient(top left, #6384B1, #5041A9);
+    background: linear-gradient(to bottom right, #6384B1, #5041A9);
+    text-align: center;
+    border-radius: 50px;
+}
+  
+.head h1 {
+    padding: 10px 10px 20px 10px;
+    font-size: 28px;
+    color: white;
+}

@@ -3,11 +3,11 @@ body {
 }
 
 .albums {
+  display: inline-flex;
+  flex: 4;
   margin: 40px;
   padding: 20px;
   text-align: center;
   background-color: #333;
   border-radius: 10px;
-  display: flex;
-  flex-direction: row;
 }

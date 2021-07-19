@@ -15,7 +15,7 @@ class SongCard extends React.Component {
         return (
             <div className="card-album">
                 <img className="image" src = {this.props.imgUrl} alt = {this.props.imgUrl}/>
-                <p className="title t1">{this.props.songTitle}</p>
+                <p className="title">{this.props.songTitle}</p>
                 <p className="artist">{this.props.artistName}</p>
                 <button onClick={this.alert}>Select</button>
             </div>

@@ -1,9 +1,11 @@
 .card-album {
-  margin: 0 20px;
-  width: 240px;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
   color: white;
   background-color: rgba(18, 18, 18, 1);
-  border-radius: 6px;
+  border-radius: 10px;
 }
 
 .card-album:hover {
@@ -12,35 +14,24 @@
 }
 
 .image {
-  padding: 20px 20px 0 20px;
-  width: 200px;
+  width: 220px;
   object-fit: center;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .title {
-  padding: 0 20px;
   text-align: left;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 
-.t2 {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .artist {
-  padding: 0 20px;
   text-align: left;
-  margin-top: -20px;
   font-size: 16px;
   color: #c4c4c4;
 }
 
 button {
-  margin-bottom: 20px;
   font-size: 16px;
   font-weight: bold;
   padding: 6px 12px;

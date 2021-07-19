@@ -1,0 +1,752 @@
+:root {
+    --primaryColor: #0099E5;
+    --secondaryColor: #133553;
+    --acsentColor: #F9DB43;
+    --textColor: #25282B;
+    --whiteColor: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #F9F9F9;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+/* Shape Divider */
+.custom-shape-divider-top-1625425731 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1625425731 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 120px;
+}
+
+.custom-shape-divider-top-1625425731 .shape-fill {
+    fill: #F9F9F9;
+}
+/* End Shape Divider */
+
+/* --- PAGE BERANDA --- */
+
+
+/* Navbar */
+.logo-text {
+    line-height: 0px;
+    margin-left: 20px;
+}
+
+.logo-text h3 {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.logo-text p {
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.nav-link {
+    color: var(--whiteColor) !important;
+    font-weight: 600 !important;
+}
+
+.nav-link.btn {
+    border-radius: 10px;
+    width: 80px;
+    background-color: var(--whiteColor);
+    color: var(--textColor) !important;
+}
+
+.nav-link.active {
+    color: var(--primaryColor) !important;
+}
+
+.nav-link.btn:hover {
+    color: var(--whiteColor) !important;
+    background-color: var(--primaryColor);
+    transition: all .4s;
+}
+
+.nav-link.inactive:hover {
+    color: var(--primaryColor) !important;
+    transition: all .4s;
+}
+/* End Navbar */
+
+
+/* Carousel */
+.carousel-wrapper img{
+    max-height: 560px;
+    object-fit: cover;
+}
+/* End Carousel */
+
+
+/* LKE Terkini */
+.card-lke {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(37, 40, 43, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.card-lke:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: rgba(124, 203, 243, 0.1);
+    transition: all 0.4s;
+}
+
+.card-lke-text.text-date {
+    font-size: 14px;
+    color: #A0A4A8;
+}
+
+.card-lke-title {
+    font-size: 14px;
+    color: var(--textColor);
+    font-weight: 600;
+    margin-bottom: -4px;
+}
+
+.card-lke-body {
+    padding: 30px;
+}
+
+.card-lke-body svg {
+    margin-bottom: 16px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.wrapper-lke .carousel-inner {
+    padding-bottom: 20px;
+    max-height: 900px;
+}
+/* End LKE Terkini */
+
+
+/* Daftar Dokumen LKE */
+.wrapper-dokumen {
+    background-color: rgba(65, 151, 194);
+    position: relative;
+}
+
+.wrapper-dokumen .content-title {
+    color: var(--whiteColor);
+}
+
+.container-dokumen {
+    padding: 0 37px;
+}
+
+.table {
+    background-color: #fff;
+}
+
+.table th {
+    font-weight: 600;
+    padding: 20px;
+}
+
+.table td {
+    padding: 20px;
+}
+
+.btn-content-dokumen {
+    border: none;
+    height: 40px;
+    margin: 40px 0;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.btn-content-dokumen a {
+    font-size: 1rem;
+    color: var(--whiteColor);
+    font-weight: 600;
+    padding: 0 32px;
+}
+
+.btn-content-dokumen:hover {
+    border: 2px solid var(--secondaryColor);
+    background-color: var(--secondaryColor);
+    transition: all 0.4s;
+}
+/* End Daftar Dokumen LKE */
+
+
+/* Berita Terkini */
+.container-berita-terkini {
+    padding: 0 100px;
+}
+
+.card-berita-terkini {
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(37, 40, 43, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.card-berita-terkini:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: rgba(124, 203, 243, 0.1);
+    transition: all 0.4s;
+}
+
+.card-berita-terkini img {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-berita-terkini-body {
+    padding: 20px;
+}
+
+.card-berita-terkini-text.text-date {
+    font-size: 14px;
+    color: #A0A4A8;
+}
+
+.card-berita-terkini-title {
+    font-size: 20px;
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+.btn-content-news {
+    border: none;
+    margin-top: 40px;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    border-radius: 10px;
+}
+
+.btn-content-news a {
+    font-size: 1rem;
+    color: var(--textColor);
+    font-weight: 600;
+    padding: 0 32px;
+}
+
+.btn-content-news:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: rgba(124, 203, 243, 0.1);
+    transition: all 0.4s;
+}
+/* End Berita Terkini */
+
+
+/* Galeri Foto */
+.container-galeri {
+    padding: 0 100px;
+}
+
+.card-galeri {
+    position: relative;
+    margin-bottom: 16px;
+    background-image: url("assets/image/Hands.jpg");
+    background-size: cover;
+    width: 305px;
+    height: 305px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(37, 40, 43, 0.1);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.gradient {
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(37, 40, 43, 0.4), transparent);
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.card-galeri::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, rgba(0, 153, 229, 0.6), transparent);
+    z-index: -1;
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 0.2s ease-in;
+}
+
+.card-galeri:hover::after {
+    border-radius: 10px;
+    transform: scaleY(1);
+    transform-origin: top;
+}
+
+.card-galeri-title {
+    position: absolute;
+    top: 65%;
+    padding: 20px;
+    font-size: 20px;
+    color: var(--whiteColor);
+    font-weight: 600;
+}
+
+.btn-content-galeri {
+    border: none;
+    margin-top: 24px;
+    height: 40px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    border-radius: 10px;
+}
+
+.btn-content-galeri a {
+    font-size: 1rem;
+    color: var(--textColor);
+    font-weight: 600;
+    padding: 0 32px;
+}
+
+.btn-content-galeri:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: rgba(124, 203, 243, 0.1);
+    transition: all 0.4s;
+}
+/* End Galeri Foto */
+
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 40px;
+}
+
+.text-footer {
+    line-height: 10px;
+    margin: 10px 0 0 20px;
+}
+
+.text-footer h4 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.socmed .bi{
+    color: var(--whiteColor) !important;
+    margin-right: 20px;
+}
+
+.socmed a {
+    margin: 22px 0 0 0px;
+}
+
+footer h6 {
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+footer a,
+footer p {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+}
+
+.footer-nav-right {
+    margin-top: 43px;
+}
+
+.footer-nav-left a:hover {
+    font-weight: 500;
+    color: var(--primaryColor);
+    transition: 0.4s;
+}
+
+.footer-nav-right a:hover {
+    font-weight: 500;
+    color: var(--primaryColor);
+    transition: 0.4s;
+}
+/* End Footer */
+
+
+/* --- END PAGE BERANDA --- */
+
+
+/* --- PAGE TENTANG KAMI --- */
+
+
+/* Tentang Kami */
+.wrapper-about {
+    margin-bottom: 160px;
+}
+
+.content-about {
+    line-height: 36px;
+    font-size: 20px;
+}
+
+.content-about.about2 {
+    margin-top: 90px;
+}
+
+.about-img {
+    height: 340px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.img2 {
+    margin-top: 100px;
+}
+/* End Tentang Kami */
+
+
+/* --- END PAGE TENTANG KAMI --- */
+
+
+/* --- PAGE VISI MISI --- */
+
+
+/* Visi Misi */
+.visi,
+.misi {
+    background-color: #eee;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+/* End Visi Misi */
+
+
+/* END PAGE VISI MISI */
+
+
+/* PAGE STRUKTUR ORGANISASI */
+
+
+/* Stuktur Organisasi */
+.struktur-img {
+    height: 500px;
+    width: 100%;
+    background-color: #eee;
+}
+
+.struktur-title {
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* End Struktur Organisasi */
+
+
+/* END PAGE STRUKTUR ORGANISASI */
+
+
+/* PAGE BERITA */
+
+
+/* Berita */
+.card-berita {
+    margin-bottom: 24px;
+    padding: 0;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(37, 40, 43, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.card-berita:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: rgba(124, 203, 243, 0.1);
+    transition: all 0.4s;
+}
+
+.card-berita img {
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    object-fit: cover;
+    height: 300px;
+}
+
+.card-berita-body {
+    padding: 20px;
+}
+
+.card-berita-text {
+    color: var(--textColor);
+}
+.card-berita-text.text-date {
+    font-size: 14px;
+    color: #A0A4A8;
+}
+
+.card-berita-title {
+    font-size: 20px;
+    color: var(--textColor);
+    font-weight: 600;
+}
+
+.page-indicator {
+    margin-top: 40px;
+    margin-right: 28px;
+}
+
+.page-indicator ul {
+    list-style: none;
+    display: inline;
+}
+
+.indicator a {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.page-indicator li {
+    display: inline-block;
+    align-content: center;
+    justify-content: center;
+    padding: 8px 16px;
+    margin: 0 10px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.indicator.active {
+    background-color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    font-weight: 600;
+}
+
+.indicator.active a {
+    color: var(--whiteColor);
+}
+
+.indicator.inactive:hover {
+    border: 1px solid var(--primaryColor);
+    background-color: rgba(124, 203, 243, 0.1);
+    transition: all 0.4s;
+}
+
+.berita1 {
+    margin: 60px 150px 60px;
+    background: var(--whiteColor);
+    border-radius: 10px;
+}
+
+.berita1-content {
+    padding: 40px 40px 60px 40px;
+}
+
+.berita1-title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.berita1-date {
+    font-size: 14px;
+    color: #A0A4A8;
+}
+
+.berita1 img {
+    height: 400px;
+    margin: 40px auto;
+}
+
+.kembali {
+    font-weight: 600;
+    color: var(--textColor);
+    stroke: var(--textColor);
+    stroke-width: 2px;
+    transition: all .4s;
+}
+
+.kembali:hover {
+    color: var(--primaryColor);
+    stroke: var(--primaryColor);
+}
+
+.next-indicator {
+    margin: 0 170px;
+    height: 40px;
+    cursor: pointer;
+    color: #bbb;
+    stroke: #bbb;
+}
+
+.next-indicator:hover {
+    color: var(--primaryColor);
+    stroke: var(--primaryColor);
+    transition: all .4s;
+}
+
+.next-title {
+    line-height: 6px;
+}
+
+.next-title-headline {
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+/* End Berita */
+
+
+/* END PAGE BERITA */
+
+
+/* PAGE GALERI FOTO */
+
+/* Galeri Foto */
+.galeri1 {
+    margin: 60px 150px 60px;
+    background: var(--whiteColor);
+    border-radius: 10px;
+}
+
+.galeri1-content {
+    padding: 40px 40px 60px 40px;
+}
+
+.galeri1-title {
+    padding-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid #eee;
+}
+
+.galeri1-date {
+    font-size: 14px;
+    color: #A0A4A8;
+}
+
+.galeri1 img {
+    height: 400px;
+}
+
+
+.galeri-img img {
+    width: 476px;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.galeri-img-wrap1 img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+
+.galeri-img-wrap2 img {
+    width: 180px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+/* Galeri Foto */
+
+
+/* END PAGE GALERI FOTO */
+
+
+/* PAGE DAFTAR DOKUMEN LKE */
+
+
+/* Daftar Dokumen */
+.panel-dokumen {
+    margin-bottom: 24px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(37, 40, 43, 0.1);
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.panel-dokumen-head ul {
+    display: flex;
+    margin: 20px;
+    padding: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.panel-dokumen-head li {
+    list-style: none;
+    background-color: #ddd;
+    padding: 8px 20px;
+    margin-right: 5px;
+    letter-spacing: 1px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.panel-dokumen-head li.active {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+.panel-dokumen .itemBox {
+    padding: 0 20px;
+}
+
+.itemBox.zi {
+    display: none;
+}
+
+.page-indicator.daftardokumen {
+    margin-bottom: 60px;
+}
+/* End Daftar Dokumen */
+
+
+/* END PAGE DAFTAR DOKUMEN LKE */

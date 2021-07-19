@@ -1,4 +1,5 @@
 import './App.css';
+import './css/bootstrap.min.css';
 import data from "./data/songData";
 import ContentTitle from './components/contentTitle';
 import SongCard from './components/songCard';
@@ -17,7 +18,7 @@ function App() {
   return (
     <div className="app">
       <ContentTitle contentTitle="Sputify" />
-      <div className="albums">
+      <div className="albums container mx-auto row gap-4">
         {playlist}
       </div>
     </div>

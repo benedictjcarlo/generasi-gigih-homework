@@ -1,0 +1,117 @@
+:root {
+    --primaryColor: #0099E5;
+    --secondaryColor: #133553;
+    --acsentColor: #F9DB43;
+    --textColor: #25282B;
+    --whiteColor: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(309deg, rgba(60,132,168,1) 0%, rgba(54,159,212,1) 100%);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.masuk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.masuk h1 {
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.masuk form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .txt-field {
+    position: relative;
+    border-bottom: 2px solid #ddd;
+    margin: 30px 0;
+}
+
+.txt-field input {
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt-field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #c4c4c4;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.txt-field span::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--primaryColor);
+    transition: all 0.5s;
+}
+
+.txt-field input:focus ~ label,
+.txt-field input:valid ~ label {
+    top: -5px;
+    color: var(--primaryColor);
+}
+
+.txt-field input:focus ~ span::before,
+.txt-field input:valid ~ span::before {
+    width: 100%;
+}
+
+.pass{
+    margin: 30px;
+    color: #a6a6a6;
+    cursor: pointer;
+}
+
+.pass:hover{
+    text-decoration: underline;
+    font-weight: 600;
+    color: var(--primaryColor);
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 4px solid;
+    background: #2691d9;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #e9f4fb;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .2s ease-in;
+}

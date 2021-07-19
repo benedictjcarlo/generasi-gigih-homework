@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './style.css';
+import './style.css';
 
 class SongCard extends React.Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class SongCard extends React.Component {
 
     render() {
         return (
-            <div className="card-album">
+            <div className="card-album mx-auto col">
                 <img className="image" src = {this.props.imgUrl} alt = {this.props.imgUrl}/>
                 <p className="title">{this.props.songTitle}</p>
                 <p className="artist">{this.props.artistName}</p>

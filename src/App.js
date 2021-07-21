@@ -1,28 +1,14 @@
 import './App.css';
 import './css/bootstrap.min.css';
-import data from "./data/songData";
-import ContentTitle from './components/contentTitle';
-import SongCard from './components/songCard';
-
-const playlist = data.map((item) => {
-  return (
-    <SongCard 
-    imgUrl={item.album.images[0].url} 
-    songTitle={item.name}
-    artistName={item.album.artists[0].name}
-    />
-  )
-})
+import AppComponent from './AppComponent.jsx';
+import axios from 'axios';
 
 function App() {
   return (
-    <div className="app">
-      <ContentTitle contentTitle="Sputify" />
-      <div className="albums container mx-auto row gap-4">
-        {playlist}
-      </div>
+    <div className="App">
+      <AppComponent />
     </div>
-  );
+  )
 }
 
 export default App;
